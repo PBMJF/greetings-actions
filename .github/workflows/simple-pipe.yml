@@ -21,12 +21,12 @@ jobs:
     steps:
     - name: Print warning message
       run: |
-        echo: "::warning::This version is for debugging only."
+        echo "::warning::This version is for debugging only."
     - name: Dump context for runner
       env:
         RUNNER_CONTEXT: ${{ toJSON(runner) }}
       run: |
-        echo: "::debug::Runner context is above."
+        echo "::debug::Runner context is above."
         
   build:
 
